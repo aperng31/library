@@ -9,7 +9,8 @@
 </head>
 <body>
     <header>
-        <h2>Mini-Library</h2>
+        <h2 style="padding-left: 16px;">Mini-Library</h2>
+        <img src="./images/bookshelf.png" alt="bookshelf.png">
     </header>
 
     <div id="left">
@@ -38,15 +39,23 @@
 
     <div id="right">
         <form action="/action_page.php" method="post">
-            <legend>Add Book</legend>
-            <label for="title">Title: </label>
-            <input type="text" id="title" name="title" autocomplete="off">
-            <label for="author">Author: </label>
-            <input type="text" id="author" name="author" autocomplete="off">
-            <label for="pages">Pages: </label>
-            <input type="text" id="pages" name="pages" autocomplete="off">
-            <label for="read">Already read?</label>
-            <input type="checkbox" id="read" name="read">
+            <h2>Add Book</h2>
+            <div>
+                <label for="title">Title: </label>
+                <input type="text" id="title" name="title" autocomplete="off" required>
+            </div>
+            <div>
+                <label for="author">Author: </label>
+                <input type="text" id="author" name="author" autocomplete="off" required>
+            </div>
+            <div>
+                <label for="pages">Pages: </label>
+                <input type="text" id="pages" name="pages" autocomplete="off" pattern="[0-9]+" required>
+            </div>
+            <div style="flex-direction: row; gap: 4px; padding: 6px 0px 6px 0px;">
+                <label for="read">Already read?</label>
+                <input type="checkbox" id="read" name="read">
+            </div>
 
             <button type="button" id="add">Add Book</button>
             <!-- <input type="submit" value="Add Book"> -->
