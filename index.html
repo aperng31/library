@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h2>Mini-Library</h2>
+    </header>
+
+    <div id="left">
+        <table id="table">
+            <colgroup>
+                <col span="1" style="width: 55%;">
+                <col span="1" style="width: 25%;">
+                <col span="1" style="width: 10%; flex: 0 0 auto;">
+                <col span="1" style="width: 5%; flex: 0 0 auto;">
+                <col span="1" style="width: 5%; flex: 0 0 auto;">
+             </colgroup>
+            <thead>
+                <tr id="header">
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Pages</th>
+                    <th>Read</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+
+            </tbody>
+
+        </table>
+    </div>
+
+    <div id="right">
+        <form action="/action_page.php" method="post">
+            <legend>Add Book</legend>
+            <label for="title">Title: </label>
+            <input type="text" id="title" name="title" autocomplete="off">
+            <label for="author">Author: </label>
+            <input type="text" id="author" name="author" autocomplete="off">
+            <label for="pages">Pages: </label>
+            <input type="text" id="pages" name="pages" autocomplete="off">
+            <label for="read">Already read?</label>
+            <input type="checkbox" id="read" name="read">
+
+            <button type="button" id="add">Add Book</button>
+            <!-- <input type="submit" value="Add Book"> -->
+        </form>
+    </div>
+
+</body>
+</html>
+<script src="javascript.js"></script>
